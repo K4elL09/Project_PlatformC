@@ -1,0 +1,99 @@
+DEBUG - 2025-06-12 06:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 06:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 06:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 06:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 06:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 06:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 06:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 06:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 06:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-12 07:30:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'platformc', 3306, '', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->first()
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Auth->doLogin()
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->first()
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Auth->doLogin()
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#13 {main}
+CRITICAL - 2025-06-12 07:30:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/doLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(14): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->doLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-12 07:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-12 07:31:34 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\checkout_page.php on line 12.
+ 1 APPPATH\Views\checkout_page.php(12): substr(null, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Views\\checkout_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('checkout_page', [], true)
+ 5 APPPATH\Controllers\Keranjang.php(81): view('checkout_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-12 07:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 07:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,497 @@
+ERROR - 2025-06-07 08:05:49 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(57): CodeIgniter\Model->insert(Array, true)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->checkout()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:05:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`platformc`.`detail_transaksi`, CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->checkout()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:22:02 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(122): CodeIgniter\Model->insert(Array, true)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:22:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`platformc`.`detail_transaksi`, CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(136): CodeIgniter\Model->insert(Array)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:22:53 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(122): CodeIgniter\Model->insert(Array, true)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:22:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`platformc`.`detail_transaksi`, CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(136): CodeIgniter\Model->insert(Array)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:30:01 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(122): CodeIgniter\Model->insert(Array, true)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:30:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`platformc`.`detail_transaksi`, CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(136): CodeIgniter\Model->insert(Array)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+CRITICAL - 2025-06-07 08:33:31 --> ParseError: Unclosed '{' on line 11
+[Method: GET, Route: keranjang/tambah/1]
+in APPPATH\Controllers\Keranjang.php on line 157.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Controllers\\Keranjang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keranjang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keranjang')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Keranjang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+CRITICAL - 2025-06-07 08:36:59 --> ParseError: Unclosed '{' on line 11
+[Method: POST, Route: keranjang/prosesPesanan]
+in APPPATH\Controllers\Keranjang.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Controllers\\Keranjang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keranjang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keranjang')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Keranjang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+CRITICAL - 2025-06-07 08:37:02 --> ParseError: Unclosed '{' on line 11
+[Method: GET, Route: checkout]
+in APPPATH\Controllers\Keranjang.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Controllers\\Keranjang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keranjang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keranjang')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Keranjang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+CRITICAL - 2025-06-07 08:37:04 --> ParseError: Unclosed '{' on line 11
+[Method: GET, Route: keranjang/lihat]
+in APPPATH\Controllers\Keranjang.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Controllers\\Keranjang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keranjang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keranjang')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Keranjang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+CRITICAL - 2025-06-07 08:37:05 --> ParseError: Unclosed '{' on line 11
+[Method: GET, Route: checkout]
+in APPPATH\Controllers\Keranjang.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Controllers\\Keranjang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keranjang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keranjang')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Keranjang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+CRITICAL - 2025-06-07 08:38:45 --> ParseError: Unclosed '{' on line 11
+[Method: GET, Route: checkout]
+in APPPATH\Controllers\Keranjang.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Controllers\\Keranjang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keranjang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keranjang')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Keranjang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+CRITICAL - 2025-06-07 08:38:46 --> ParseError: Unclosed '{' on line 11
+[Method: GET, Route: checkout]
+in APPPATH\Controllers\Keranjang.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Controllers\\Keranjang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keranjang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keranjang')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Keranjang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-07 08:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-07 08:39:12 --> ParseError: Unclosed '{' on line 11
+[Method: GET, Route: checkout]
+in APPPATH\Controllers\Keranjang.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Controllers\\Keranjang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keranjang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keranjang')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Keranjang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-07 08:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-07 08:39:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\checkout_page.php on line 12.
+ 1 APPPATH\Views\checkout_page.php(12): substr(null, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Views\\checkout_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('checkout_page', [], true)
+ 5 APPPATH\Controllers\Keranjang.php(88): view('checkout_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-07 08:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-07 08:39:49 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(122): CodeIgniter\Model->insert(Array, true)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:39:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`platformc`.`detail_transaksi`, CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(136): CodeIgniter\Model->insert(Array)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+DEBUG - 2025-06-07 08:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 08:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 08:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 08:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 08:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 08:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-07 08:42:09 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\checkout_page.php on line 12.
+ 1 APPPATH\Views\checkout_page.php(12): substr(null, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Views\\checkout_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('checkout_page', [], true)
+ 5 APPPATH\Controllers\Keranjang.php(88): view('checkout_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-07 08:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-07 08:42:11 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(122): CodeIgniter\Model->insert(Array, true)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:42:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`platformc`.`detail_transaksi`, CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(136): CodeIgniter\Model->insert(Array)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+DEBUG - 2025-06-07 08:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-07 08:47:32 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(122): CodeIgniter\Model->insert(Array, true)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:47:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`platformc`.`detail_transaksi`, CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(136): CodeIgniter\Model->insert(Array)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+DEBUG - 2025-06-07 08:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-07 08:47:36 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\checkout_page.php on line 12.
+ 1 APPPATH\Views\checkout_page.php(12): substr(null, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Views\\checkout_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('checkout_page', [], true)
+ 5 APPPATH\Controllers\Keranjang.php(88): view('checkout_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-07 08:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 08:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-07 08:47:39 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\checkout_page.php on line 12.
+ 1 APPPATH\Views\checkout_page.php(12): substr(null, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Views\\checkout_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('checkout_page', [], true)
+ 5 APPPATH\Controllers\Keranjang.php(88): view('checkout_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-07 08:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-07 08:47:41 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(122): CodeIgniter\Model->insert(Array, true)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+ERROR - 2025-06-07 08:47:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`platformc`.`detail_transaksi`, CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\app\Controllers\Keranjang.php(136): CodeIgniter\Model->insert(Array)
+#8 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(933): App\Controllers\Keranjang->prosesPesanan()
+#9 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#10 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\UAS_PlatformC\PlatfromC_235314207_Michael Fillius Sinaga\system\rewrite.php(44): require_once('C:\\UAS_Platform...')
+#15 {main}
+DEBUG - 2025-06-07 09:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-07 09:37:54 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\checkout_page.php on line 12.
+ 1 APPPATH\Views\checkout_page.php(12): substr(null, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\app\\Views\\checkout_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('checkout_page', [], true)
+ 5 APPPATH\Controllers\Keranjang.php(81): view('checkout_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\UAS_PlatformC\\PlatfromC_235314207_Michael Fillius Sinaga\\public\\index.php')
+DEBUG - 2025-06-07 09:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 09:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
