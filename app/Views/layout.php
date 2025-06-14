@@ -9,7 +9,7 @@
 <body>
 
     <nav class="navbar">
-        <a href="<?= site_url('/') ?>" class="brand">Dapur Platform</a>
+        <a href="<?= site_url('/') ?>" class="brand">Dapur ASA</a>
         <div class="nav-links">
             <?php if(session()->get('id_pengguna')): ?>
                 <a href="<?= site_url('keranjang/lihat') ?>">Keranjang</a>
