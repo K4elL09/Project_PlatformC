@@ -126,13 +126,8 @@ class Keranjang extends BaseController
         }
 
         $db->transComplete();
-
-        if ($db->transStatus() === FALSE) {
-            die('Database transaction failed! Data tidak berhasil disimpan. Periksa kembali $allowedFields di Model dan nama kolom di database.');
-        } else {
-            session()->remove('keranjang');
-            session()->setFlashdata('success_message', 'Pesanan Berhasil Dibuat! Silakan lihat riwayat transaksi Anda untuk detail pembayaran.');
-            return redirect()->to('/');
-        }
+        session()->remove('keranjang');
+        session()->setFlashdata('success_message', 'Pesanan Berhasil Dibuat! Silakan lihat riwayat transaksi Anda untuk detail pembayaran.');
+        return redirect()->to('/');
     }
 }
